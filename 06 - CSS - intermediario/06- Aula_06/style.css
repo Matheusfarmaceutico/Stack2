@@ -1,0 +1,43 @@
+a {
+    color: red;
+}
+
+a:hover {
+    color: blue;
+    font-weight: bold; /* Pseudo classe hover */
+}
+
+a:hover + .caixa {
+    display: block;
+}
+a:visited {
+    color: rgb(5, 5, 5);
+}
+
+a:active {
+    color: aquamarine; /* Quando seguro o mouse */
+}
+
+.caixa {
+    height: 150px;
+    width: 150px;
+    background-color: coral;
+    display: none;
+}
+.caixa:hover {
+    background-color: blueviolet;
+}
+
+ul li:first-child {
+    color: red;
+}
+
+ul li:last-child {
+    color: blue;
+}
+.texto p:last-child {
+    color: blue;
+}
+.texto2 p:nth-child(2) {
+    color: green;
+} /*nth-child me permite especificar o elemento */

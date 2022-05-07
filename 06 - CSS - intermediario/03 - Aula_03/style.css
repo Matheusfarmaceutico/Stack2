@@ -1,0 +1,18 @@
+
+.teste {
+    width: 150px;
+    height: 150px;
+    display: block; /* Mudando para display in block para que eu consiga setar a largura e a altura. Antes ele era um display in line */
+    display: inline-block; /* Já se eu mudo para display inline-block, percebo que ele tem uma característica de ser uma caixa, mas que permite que um elemento ao lado seja disposto*/
+}
+
+ul {
+    background-color: grey;
+    padding: 20px;
+}
+
+ul li {
+    display: inline;
+    margin: 20px;
+    
+} /* Fazendo com que uma lista deixe de se comporta como um bloco e passe a se comportar como inline */

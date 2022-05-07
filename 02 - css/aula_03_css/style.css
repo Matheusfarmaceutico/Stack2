@@ -1,0 +1,15 @@
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    /* background-position: 100% 10%;  # Vai colocar o plano de fundo numa posicao 100% longe do lado esquerdo e 10% distante do centro.*/
+    /* background-position: center center; centralizar de fato ao centro */
+    /* background-size: cover; preencher a tela sem se repetir. */
+    /*background-size: cover;
+    background-attachment: fixed; # Vai impedir que o fundo se mova junto com scroll*/ 
+}
+
+p {
+    color: rgb(34, 34,34);
+
+
+}

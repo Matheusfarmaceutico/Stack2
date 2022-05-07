@@ -1,0 +1,33 @@
+body {
+    background-color: #dfdfdf
+}
+
+p {
+    color: #222121;
+}
+
+.foto {
+    width: 200px; 
+    border: 2px solid #ffff; /* Essa simplificação é chamada de shorthand */
+    border-radius: 50%;
+    /*margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px; -- uma forma sem utilizar o shorthand */ 
+    margin: 30px; /* Como o valor é 30px para tudo, basta colocar um valor no shorthand que ele vai ser aplicado a todos */
+    padding: 10px; /*adiciona uma margem interna (nao externa) à minha foto. */
+}
+
+.farmaceutico {
+    margin: 0%;
+}
+#nome {
+    margin: 0%;
+}
+ul {
+    margin: 0;
+
+}
+.titulo01 {
+    margin: 0;
+}

@@ -1,0 +1,75 @@
+* {
+    margin: 0%;
+    padding: 0%; /* regra reset, padroniza para todo o documento, meio que impedindo que haja padroes que precisam ser alterados o tempo todo. */
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    color: white;
+    background-color: #3F009B;
+    font-family: 'Raleway', sans-serif;
+   
+
+ 
+}
+.avatar {
+    width: 80px;
+    border-radius: 50px;
+    border: 3px solid white;
+    box-shadow: 0 0 20px white;
+}
+
+h1 {
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 100;
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.profile {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social img {
+    width: 33px;
+}
+
+.social {
+    display: flex; /* Fazer os filhos de social ficarem lado a lado */
+    justify-content: space-around; /* Só funciona quando flex está ativado */
+    list-style: none;
+    margin: 20px 0;
+}
+
+.links-list {
+
+    list-style: none;
+}
+.links-list li {
+    margin: 10px 20px;
+    box-shadow: 0px 0px 20px white;
+}
+.links-list li a {
+    background-color: white;
+    padding: 15px 20px;
+    display: block; /*Display em bloco, nao em inline */
+    border-radius: 4px;
+    text-decoration: none;
+    color: #3F009B;
+    font-weight: bold;
+    
+
+}
+
+.links-list li a span {
+    color: gray;
+    display: block;
+    margin-top: 5px;
+}

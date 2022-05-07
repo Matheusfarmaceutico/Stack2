@@ -1,0 +1,22 @@
+body {
+    background-color: #dfdfdf
+}
+
+p {
+    color: #222121;
+}
+
+.foto {
+    width: 200px; 
+    border: 2px solid #ffff; /* Essa simplificação é chamada de shorthand */
+    border-radius: 50% 10% 70%;
+    border-top-style: dotted; /*Consigo alterar individualmente o estilo e a cor das bordas. Se bem que nesse caso ela esteja na forma de radius, mas ainda assim será visível. */
+    border-right-color: black;
+}
+
+/*.foto {
+    border-width: 5px;
+    border-color: rgb(163, 35, 35);
+    border-style: ridge;
+} -- Note que usar apenas o border, simplifica meu trabalho. Caso contrário teria que criar 3 características para minha borda*/ 
+

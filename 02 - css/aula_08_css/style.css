@@ -1,0 +1,48 @@
+body {
+    background-color: #dfdfdf;
+    font-family: Arial, Helvetica,sans-serif, 'Arial Narrow'; /* Se nao carregar Arial, carrega Helvetica, assim por diante. Aspas simples serve para selecionar fonte com dois nomes*/ 
+    color: rgb(34, 34, 34);
+}
+
+p {
+    
+}
+
+.foto {
+    width: 200px;
+    border: 2px solid #ffff;
+    border-radius: 50%;
+    margin: 30px;
+    box-shadow: 2px 2px 10px rgb(77, 77, 77);
+}
+
+
+
+
+h1 {
+    margin-bottom: 0%;
+    letter-spacing: -1px;
+}
+h2 {margin-top: 0%;
+    font-style: italic;
+    color: rgb(73, 73, 73);
+    font-weight: 100;
+    letter-spacing: -1px;
+
+}
+#nome {
+    margin: 0%;
+}
+ul {
+    margin: 0;
+
+}
+.titulo01 {
+    margin: 0;
+}
+.contato {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+/* Ordem: horizontal, vertical e desfoque da sombra */

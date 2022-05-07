@@ -1,0 +1,22 @@
+h1 {
+    text-shadow: 2px 2px 15px red;
+}
+.green {
+    color: green;
+    text-align: justify;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    text-indent: 50px;
+    word-spacing: 20px;
+    line-height: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sam {
+    letter-spacing: 50px;
+}

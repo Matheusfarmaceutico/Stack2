@@ -1,0 +1,37 @@
+::selection {
+    background-color: palevioletred;
+}
+p::first-line {
+    color: orange; /*Me permite alterar especificamente uma característica de meu element. Estes sao os pseudos elementos */
+
+}
+
+p::first-letter {
+    color: green;
+    font-size: 50px;
+}
+
+h1::before {
+    content: url("https://static.vecteezy.com/system/resources/thumbnails/001/504/957/small/rocket-icon-free-vector.jpg");
+}
+
+/* Como eu ajustaria o tamanho? */
+
+h2::before{
+    background: url("https://static.vecteezy.com/system/resources/thumbnails/001/504/957/small/rocket-icon-free-vector.jpg");
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: cover;
+    margin-right: 30px;
+    content: "";
+}
+
+h2::after {
+    background: url("https://static.vecteezy.com/system/resources/thumbnails/001/504/957/small/rocket-icon-free-vector.jpg");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    content: "";
+    display: inline-block;
+}
