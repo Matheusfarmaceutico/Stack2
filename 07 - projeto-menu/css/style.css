@@ -51,7 +51,20 @@ body {
 .menu li a:hover {
     background-color: #1d52ff;
 }
+.menu li:hover .submenu { 
+    display: block;
+}
 ::marker {
     color: blue;
     font-size: 0;
   }
+ul li {
+    position: relative;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 34px;
+    left: 0;
+    background-color: #1d52ff;
+}
