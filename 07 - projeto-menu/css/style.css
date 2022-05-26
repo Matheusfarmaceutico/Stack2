@@ -40,14 +40,45 @@
 display: flex;
  }
 
-
+.menu li {
+    position: relative;
+}
 .menu li a {
+    display: block;
     padding: 17px;
     color: white;
     text-decoration: none;
     font-size: 14px;
 }
 
-.menu li a:hover {
+.menu li:hover {
     background-color: #1d52ff;
+}
+
+.menu li:hover > .submenu,
+submenu li:hover > .submenu  {
+    display: block;
+
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #2952ff;
+    min-width: 110%;
+}
+
+
+.submenu li:hover {
+    background: black;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li .submenu {
+    top: 0;
+    left: 100%;
 }
