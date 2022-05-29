@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula_01-html-avancado</title>
+</head>
+<body>
+    <form action="salvar.html" method="get"> <!--Envia (por http) as info de name para a url Olhar Nota Rodape-->
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome"type="text" placeholder="Digite seu o nome">
+
+        <br><br>
+
+        <label>Email</label>
+        <input name="email"type="email" placeholder="Digite o seu email"> <!-- No celular ele facilita a digitacao, quando utilizamos o type=email-->
+
+        <br><br>
+
+        <label>Senha</label>
+        <input name="senha" type="password" placeholder="Digite sua senha">
+
+        <br><br>
+
+        
+
+        <label>Enviar arquivo</label>
+        <input type="file" placeholder="semana"> <!-- Testando alguns types-->
+        <br><br>
+        
+        <label> Sexo </label>
+        <br>
+        <input name = "sexo" type="radio" value="masculino"> <label>Masculino</label> <!-- O problema das bolinhas se repetirem se resolver com o atributo name=sexo, por exemplo-->
+        <br>
+        <input name= "sexo"type="radio" value="feminino"> <label>Feminino</label>
+        <br>
+        <input name="sexo" type="radio" value="Nao_definido"> <label>Prefiro não informar</label>
+        <br><br>
+        <label>Habilidades:</label>
+        <br>
+        <input name="habilidades" type="checkbox" value="html" id="html"> <label for="html">Html</label>
+        <!-- id e for trabalham juntos para criar a opcao de clicar na palavra ao inves de necessariamente ter que clicar na bolinha de selecao-->
+        <br>
+        <input name="habilidades"type="checkbox" value="css" id="css"> <label for="css">Css</label>
+        <br>
+        <input name="habilidades" type="checkbox" value="javascript" id="javascript"> <label for="javascript">Javascript</label>
+        <br><br>
+
+        <button>
+            enviar
+        </button>
+    </form>
+</body>
+</html>
+
+
+<!-- Se eu setar method para post, eu enviarei as informacoes para o backend, onde eles serao tratadas. Se eu n tiver backend pra tratar, terei um erro no navegador.-->
