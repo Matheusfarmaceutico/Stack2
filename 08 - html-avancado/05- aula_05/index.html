@@ -7,71 +7,90 @@
     <title>Aula_01-html-avancado</title>
 </head>
 <body>
-    <form action="salvar.html" method="get"> <!--Envia (por http) as info de name para a url Olhar Nota Rodape-->
-        <label for="nome">Nome</label>
-        <input id="nome" name="nome"type="text" placeholder="Digite seu o nome">
+    <fieldset>
+        <legend>Dados do usuário</legend>
+        <form action="salvar.html" method="get"> <!--Envia (por http) as info de name para a url Olhar Nota Rodape-->
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome"type="text" placeholder="Digite seu o nome">
 
-        <br><br>
+            <br><br>
 
-        <label>Email</label>
-        <input name="email"type="email" placeholder="Digite o seu email"> <!-- No celular ele facilita a digitacao, quando utilizamos o type=email-->
+            <label>Email</label>
+            <input name="email"type="email" placeholder="Digite o seu email"> <!-- No celular ele facilita a digitacao, quando utilizamos o type=email-->
 
-        <br><br>
+            <br><br>
 
-        <label>Senha</label>
-        <input name="senha" type="password" placeholder="Digite sua senha">
+            <label>Senha</label>
+            <input name="senha" type="password" placeholder="Digite sua senha">
 
-        <br><br>
+            <br><br>
 
-        
-
-        <label>Enviar arquivo</label>
-        <input type="file" placeholder="semana"> <!-- Testando alguns types-->
-        <br><br>
-        
-        <label> Sexo </label>
-        <br>
-        <input name = "sexo" type="radio" value="masculino"> <label>Masculino</label> <!-- O problema das bolinhas se repetirem se resolver com o atributo name=sexo, por exemplo-->
-        <br>
-        <input name= "sexo"type="radio" value="feminino"> <label>Feminino</label>
-        <br>
-        <input name="sexo" type="radio" value="Nao_definido"> <label>Prefiro não informar</label>
-        <br><br>
-        <label>Habilidades:</label>
-        <br>
-        <input name="habilidades" type="checkbox" value="html" id="html"> <label for="html">Html</label>
-        <!-- id e for trabalham juntos para criar a opcao de clicar na palavra ao inves de necessariamente ter que clicar na bolinha de selecao-->
-        <br>
-        <input name="habilidades"type="checkbox" value="css" id="css"> <label for="css">Css</label>
-        <br>
-        <input name="habilidades" type="checkbox" value="javascript" id="javascript"> <label for="javascript">Javascript</label>
-        <br><br>
-        <label>Cidades:</label>
-        <br>
-        <select name="cidades"> <!-- Observe que nesse caso eu coloco name em select-->
-            <option selected value="">--Selecione--</option> <!--Value vazio porque se o user deixar sem marcar nada, ele envia "--selecione--" por padrao-->
-            <option value="São Paulo">São Paulo</option>
-            <option value="Rio de Janeiro">Rio de Janeiro</option>
-            <option value="Goiânia">Goiânia</option>
-        </select>
-        <br><br>
-        <select>
-            <option selected value="">--escolha um carro--</option>
-            <optgroup label="Honda">
-                <option value="Civic">Civic</option>
-            </optgroup>
-            <optgroup label="GM">
-                <option value="Celta">Celta</option>
-            </optgroup>
-            <optgroup label="Fiat">
-                <option value="Uno">Uno</option>
-            </optgroup>
             
-        </select>
-        <br><br>
-        <button>
-            enviar
-        </button>
+
+            <label>Enviar arquivo</label>
+            <input type="file" placeholder="semana"> <!-- Testando alguns types-->
+            <br><br>
+            
+            <label> Sexo </label>
+            <br>
+            <input name = "sexo" type="radio" value="masculino"> <label>Masculino</label> <!-- O problema das bolinhas se repetirem se resolver com o atributo name=sexo, por exemplo-->
+            <br>
+            <input name= "sexo"type="radio" value="feminino"> <label>Feminino</label>
+            <br>
+            <input name="sexo" type="radio" value="Nao_definido"> <label>Prefiro não informar</label>
+            <br><br>
+            <label>Habilidades:</label>
+            <br>
+            <input name="habilidades" type="checkbox" value="html" id="html"> <label for="html">Html</label>
+            <!-- id e for trabalham juntos para criar a opcao de clicar na palavra ao inves de necessariamente ter que clicar na bolinha de selecao-->
+            <br>
+            <input name="habilidades"type="checkbox" value="css" id="css"> <label for="css">Css</label>
+            <br>
+            <input name="habilidades" type="checkbox" value="javascript" id="javascript"> <label for="javascript">Javascript</label>
+            <br><br>
+            <label>Cidades:</label>
+            <br>
+            <select name="cidades"> <!-- Observe que nesse caso eu coloco name em select-->
+                <option selected value="">--Selecione--</option> <!--Value vazio porque se o user deixar sem marcar nada, ele envia "--selecione--" por padrao-->
+                <option value="São Paulo">São Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Goiânia">Goiânia</option>
+            </select>
+            <br><br>
+            <select name="carro">
+                <option selected value="">--escolha um carro--</option>
+                <optgroup label="Honda">
+                    <option value="Civic">Civic</option>
+                </optgroup>
+                <optgroup label="GM">
+                    <option value="Celta">Celta</option>
+                </optgroup>
+                <optgroup label="Fiat">
+                    <option value="Uno">Uno</option>
+                </optgroup>
+                
+            </select>
+            <br><br>
+            <!-- Isso serve para fazer uma listagem orientada ao que o user digitar-->
+            <label>Frutas:</label>
+            <input list ="listafrutas"type="text" name="frutas" placeholder="Digite sua fruta">
+            <datalist id="listafrutas">
+                <option value="Abacate">
+                <option value="Limão">
+                <option value="Acerola">
+            </datalist>
+
+            <br><br>
+
+            <label>Deixe sua mensagem:</label>
+            <br>
+            <textarea name="mensagem"cols="50" rows="10"></textarea>
+            
+            <br><br>
+            <button>
+                enviar
+            </button>
+    </fieldset>
     </form>
 </body>
 </html>
