@@ -41,22 +41,22 @@ body {
     text-transform: capitalize;
 }
 
-.form .nome, .email,.textcheckbox,.botao{
+form .nome, .email,.textcheckbox,.botao{
     min-width: 100%;
 
 }
 
-.form .nome, .email,.botao {
+form .nome, .email,.botao {
     padding: 10px;
     border-radius: 7px;
 }
 
-.form .nome {
+form .nome {
 
     margin-block: 0 4px;
 }
 
-.form .email {
+form .email {
     margin-block: 0 20px;
 }
 
@@ -75,8 +75,9 @@ body {
 .botao:hover {
     background-color: #006cfa;
 }
-.botao a {
+.botao {
     display: block;
     color: white;
     font-family: "Roboto","sans-serif";
+    cursor: pointer;
 }
