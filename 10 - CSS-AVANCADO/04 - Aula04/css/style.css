@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    font-size: 50px;
+}
+body {
+    font-size: 29px;
+}
+/*.box {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+
+    NOTA: o height nao funciona com porcentagem. É necessário utilizar o vh (viewport height) para que ele ocupa 100% da minha área visível. O mesmo vale para o vm (viewport widht), embore este suporte porcentagens.
+}
+*/
+
+.box {
+    width: 100vw;
+    height: 95vh;
+    background-color: black;
+}
+
+.box2 {
+    background-color: rgb(228, 27, 27);
+    /* NOte que aqui na página onde irá ter um conteúdo, o correto é deixar este conteúdo empurrar o view port. Se eu setar um valor fixo, o conteúdo sobressalente passaria o view port */
+}
+
+p {
+    font-size: 2em; /* 1 em= font-size definido no elemento pai, nesse caso o body é pai de todos. É interessante utilizar em design responsivo. Foi adiantado pelo professor que haverá uma ferramenta chamada media query que pega o tamanho da tela do cliente. Por algum mecanismo de condicional, ele consegue alterar um único valor (font-size do body) de acordo com o tamanho da tela */
+}
+.segundo {
+
+    font-size: 2rem;
+    /*O rem é semelhante ao em, contudo, ele obedece ao :root */
+}
