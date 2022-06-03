@@ -1,0 +1,46 @@
+ body {
+     margin: 100px;
+ }
+
+ .box {
+     color: white;
+     width: 300px;
+     height: 300px;
+     background-color: black;
+     transition-duration: 5000ms;
+     transition-property: width background-color
+     
+    
+ }
+
+
+ .box:hover {
+     width: 500px;
+     background-color: red;
+ }
+
+ .box2 {
+    color: white;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    /* transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.58, 1.01, 0.76, -0.15);
+    transition-delay: 500ms;
+    - property, duration, timing, delay */
+    transition: width 2000ms ease 0ms;
+}
+
+
+    
+    /*
+     ease in - suave no inicio e acelera no final
+    ease out - rapido no inicio e desacelera no final */
+
+
+
+.box2:hover {
+    width: 1200px;
+    height: 300px;
+    background-color: rgb(202, 9, 9);
+}

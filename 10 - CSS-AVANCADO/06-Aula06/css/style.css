@@ -1,0 +1,97 @@
+ body {
+     margin: 100px;
+ }
+
+ .box {
+     color: white;
+     width: 300px;
+     height: 300px;
+     background-color: black;
+     transition-duration: 500ms;
+     
+    
+ }
+
+
+ .box:hover {
+     width: 500px;
+     background-color: red;
+     transform: translate(50px,100px); /* Note que há um pseudo margin, que deixa o elemento flutuar sobre os outros ao redor. Argumento 1 left e Argumento 2 top */
+     
+ }
+
+ .box2 {
+    border-radius: 6px 50%;
+    color: white;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    transition-duration: 500ms;
+    transform-origin: 25%,40%;
+   
+  
+}
+
+
+
+
+
+.box2:hover {
+    width: 300px;
+    height: 50px;
+    background-color: rgb(202, 9, 9);
+   
+    transform: rotate(360deg) scaleY(2); /*largura, altura, respec. O scale aumenta multiplica o valor de largura e altura. Ele faz esse acréscimo de acordo com o centro, e nao dos cantos como width e height. O scaleX e scaleY, só levam um arg e modificam o eixo x (largura) ou y (altura). */
+}
+
+
+.box3 {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    transition-duration: 500ms;
+}
+
+.box3:hover {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(9, 76, 177);
+    transform: skewX(20deg); /* "TORCER" A IMAGEM, SEJA skewX (eixo x = largura) ou skewY, (eixo y = altura)*/
+}
+
+.box4 {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    transition-duration: 500ms;
+}
+.box4:hover {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(166, 177, 9);
+    transform: matrix(1, -0.3, 0, 1, 50, 30); /* Matriz junta tudo */
+    /*matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+}
+
+
+.box5 {
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    border-radius: 6px 50%;
+    color: white;
+    background-color: blue;
+    transform-origin: 20% 40%; /* Tmb aceita left e right como arg. Muda o eixo de rotacao de origem. Deve ser aplicado na caixa em si, antes do hover. */
+    transition-duration: 500ms;
+}
+
+.box5:hover {
+
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    border-radius: 6px 50%;
+    color: white;
+    background-color: rgb(255, 0, 234);
+    transform: rotate(360deg);
+}
