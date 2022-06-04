@@ -1,0 +1,84 @@
+ body {
+     margin: 100px;
+ }
+
+ .box {
+     width: 300px;
+     height: 300px;
+     background-color: black;
+     animation-name: minhaAnimacao;
+     animation-duration: 1000ms;
+     animation-iteration-count: infinite;
+     animation-delay: 5s;
+     animation-direction: alternate; /* alternate, ora começar de uma ordem de porcentagem, ora de outra */
+    
+    
+ }
+
+ @keyframes minhaAnimacao { /* Aceita from, to e valores em porcentagem para determinar os Meios */
+     
+    0% {
+        background-color: black;
+        border: 20px solid wheat;
+
+        
+    }
+
+    50% {
+        border: 0px solid wheat;
+        border-radius: 50%;
+    }
+
+    100%{
+        border-radius: 20%;
+        background-color: red;
+        transform: rotate(360deg);
+    }
+ }
+
+.box2 {
+    color: white;
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    animation-name: caixa2;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-delay: 2ms;
+    animation-timing-function: ease-in;
+
+}
+
+@keyframes caixa2 {
+
+    0% {
+        
+        background-color: black;
+        transform: rotate(0deg);
+        
+    }
+
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+
+    50% {
+        background-color: rgb(243, 1, 1);
+        transform: rotate(180deg);
+        
+    }
+
+    75% {
+        background-color: rgb(12, 32, 209);
+        transform: rotate(270deg);
+        transform: translate(500px, 500px);
+    }
+    100% {
+        background-color: rgb(10, 189, 10);
+        transform:rotate(360deg)
+    }
+
+
+}
