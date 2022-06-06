@@ -1,7 +1,7 @@
 .container {
     background-color: silver;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse; /* Note que o row-reverse coloca os elementos no canto, também os invertendo. Veremos na prox aula que há uma func no justify content que coloca no canto mas n inverte os elementos */
     flex-wrap: wrap-reverse;
     /*flex-flow: row wrap; -- short*/
     

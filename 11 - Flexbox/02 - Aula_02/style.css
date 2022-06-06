@@ -1,0 +1,46 @@
+.container {
+    background-color: silver;
+    display: flex;
+    height: 1000px;
+    flex-direction: column;
+    justify-content: space-around;
+    
+   
+    
+    
+    
+    
+    
+    
+    /* Notas: 
+    Exemplo_01:  justify-content: flex-end; /* Coloca os elms no canto, sem os inverter, como o flex-direction: row-reverse
+    
+    Exemplo_02: Note que mesmo que eu aplico padding agressivo, o justify-content vai manter um padrao que caiba na tela, embora haja limites pra isso..
+    
+    Exemplo_03: É possível aplicar o space-around, por exemplo, com flex-direction setado para coluna. Contudo, meu container deve ter uma altura suficiente para permitir isso.
+     */
+}
+
+.caixa {
+    width:100px;
+    height: 50px;
+    
+    
+}
+
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green
+}
