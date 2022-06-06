@@ -1,0 +1,44 @@
+.container {
+    background-color: silver;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    /*flex-flow: row wrap; -- short*/
+    
+    
+    
+    
+    
+    
+    /* Notas: 
+    Exemplo_01 - Quando eu aplico o display flex em um elemento pai, todos os seus filhos, independentemente do tipo de display em que estão configurados, passarão a se comportar como display flex.
+    Exemplo_02 - Pode parecer que quando aplico flex-direction para column, nada de novo ocorre, pois os elementos voltam a estar um abaixo do outro. Contudo, essa propriedade do css me dará futuramente a possibilidade de lidar melhor com elemento. 
+    Exemplo_03 - Posso aplicar o row-reverse para inverter a ordem dos filhos. Ex: a ordem seria executada normalmente 1,2,3,4. Com row-reverse, passa a ser 4,3,2,1. O mesmo se aplica para a propriedade column-reverse. 
+    Exemplo_04 - Mesmo que eu sete o pixel de largura para um valor exorbitante, que em tese extrapolaria a tela, com flex isso n ocorre, pois ele tenta se ajustar perfeitamente ao tamanho da tela.
+    Exemplo_05 - O flex wrap faz que em uma tela menor, os elementos não fiquem pressionados uns contra os outros, e quebrem automaticamente para a linha de baixo.
+    Exemplo_06 - O wrap-reverse faz com que o último elemento seja quebrada e vá para a linha de cima.
+    Exemplo_07 - flex-flow é um short que dita o eixo (arg 1) e a wrap (arg 2) */
+}
+
+.caixa {
+    width:100px;
+    height: 50px;
+    
+}
+
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green
+}
