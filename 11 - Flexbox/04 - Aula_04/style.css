@@ -1,0 +1,48 @@
+.container {
+    background-color: silver;
+    display: flex;
+    height: 600px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    
+      
+}
+
+.caixa {
+    width:100px;
+    height: 100px;
+    
+    
+    
+    
+}
+
+/*Exemplo_01: Note que aqui estou aplicando uma ordem nos elementos. Por padrao o order é setado para 0, entao se eu colocar um dos elementos como 3, por exemplo, ele ficará na frente de todos os outros, pois tem o número maior. Para que ele seja de fato o terceiro elemento, e nao o último, tenho que colocar um order pra cada um com um valor inferior e superior ao 3. Se eu quiser colocar apenas um elemento na frente, para que n tenha que taxar um order pra cada, posso simplesmente habilita o elemento escolhido para order: -1.
+
+Exemplo_02: Posso usar o align-self para alterar o alinhamento de apenas um elemento. Contudo, preciso retirar o align-items e o align-content do elemento pai. 
+
+Exemplo_03: Com flex-grow consigo fazer com que um elemento tenha 2 ou mais vezes o tamanho dos outros elementos. Mesmo que redimensione a tela, ele sempre será ao menos um pouco maior do que os outros.*/
+.red {
+    flex-grow: 2;
+    align-self: center;
+    order: 3;
+    background-color: red;
+    
+}
+
+.blue {
+    align-self: flex-end;
+    order: 4;
+    background-color: blue;
+}
+
+.yellow {
+    order: 1;
+    background-color: yellow;
+}
+
+.green {
+    order: 2;
+    background-color: green
+}
