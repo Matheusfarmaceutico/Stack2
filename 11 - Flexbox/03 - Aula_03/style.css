@@ -1,0 +1,47 @@
+.container {
+    background-color: silver;
+    display: flex;
+    height: 600px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Olhar nota 2*/
+    align-items:center;
+    align-content: center;
+    
+    
+    
+   
+
+    /* Notas: 
+    Exemplo01: Note que o align items só funciona com flex-direction setado para row. Além disso, preste atenção que estou querendo alinhar elementos dentro de uma div in block, numa altura de 600px. É possível centralizar um menu (ul, li, etc...), por exemplo.
+    Exemplo02: Observe que se eu habilitar o flex-wrap: wrap, assim que eu redimensiono a tela com apenas align-items ativado, as caixas dao automaticamente um espaçamento na vertical. Isso ocorre porque o css tenta preencher toda a tela com os elementos. Para impedir que haja esse espaçamento na vertical, é necessário habilitar o align-content: center (ou conforme a orientação de align-itemns no momento).
+   
+     */
+}
+
+.caixa {
+    width:100px;
+    height: 100px;
+    
+    
+    
+    
+}
+
+
+.red {
+    background-color: red;
+    
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green
+}
