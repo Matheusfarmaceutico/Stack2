@@ -10,6 +10,14 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+
+/*
+*********************
+    HOME - MENU
+*********************
+*/
+
+
 .home {
     background-size: cover;
     background-image: url(../images/bg-home.jpg);
@@ -41,9 +49,21 @@ body {
 .home .header .nav ul li a:hover {
 
     border-bottom: 1px solid var(--color-primary);
-    
+    color: var(--color-primary);
 }
 
 .home .header .nav ul li .logo {
     margin: 0 30px
+}
+
+
+/*
+*********************
+    HOME - BANNER
+*********************
+*/
+
+.home .banner {
+    color: white;
+    text-align: center;
 }
