@@ -1,52 +1,49 @@
 :root {
-    --color-primary: #917758;
+    --color-primary: #917758
 }
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-body  {
+body {
     font-family: 'Poppins', sans-serif;
 }
+
 .home {
     background-size: cover;
     background-image: url(../images/bg-home.jpg);
     height: 100vh;
 }
-
-.header {
-    padding: 20px 0;
+.home .header {
+    padding: 30px 0;
 }
-.home .header .nav {
-    display: flex;
-    justify-content: center;
-}
-.home .header .nav ul{
+.home .header .nav ul {
     display: flex;
     list-style: none;
+    justify-content: center;
 }
-
-.home .header .nav ul li{
-    display: flex;
-    align-items: center;
+.home .header .nav ul li {
     margin: 0 10px;
-   
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.home .header .nav ul li a {
+    color: white;
+   font-size: 12px;
+   font-weight: bolder;
+   text-decoration: none;
+   padding: 20px;
     
 }
-.home .header .nav ul li a{
-    color: white;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 20px;
+.home .header .nav ul li a:hover {
+
+    border-bottom: 1px solid var(--color-primary);
     
 }
 
-.home .header .nav ul li a:hover{
-    border-bottom: 1px solid var(--color-primary);
-    color: var(--color-primary);
-    
-    
+.home .header .nav ul li .logo {
+    margin: 0 30px
 }
